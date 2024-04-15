@@ -1,0 +1,45 @@
+body {
+    background-image: url(../images/bg.png);
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+#header {
+    background-image: url(../images/01.png);
+    height: 235px;
+}
+#menuButton {
+    background-image: url(../images/02.png);
+    height: 45px;
+}
+#main {
+    background-image: url(../images/03.png);
+}
+
+#footer {
+    background-image: url(../images/04.png);
+    height: 61px;
+}
+.Watermark {
+    /* position: relative;
+    left: -51px;
+    bottom: 99px; */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.myPhoto {
+    float: left;
+    position: relative;
+    margin: 0 2px;
+}
+#album {
+    padding: 0 79px;
+}
+#mainB {
+    clear: both;
+}
+p {
+    text-align: center;
+}
