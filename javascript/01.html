@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1 id="head_1">我是h1</h1>
+
+    <input type="number" name="" id="n1"> + <input type="number" name="" id="n2"> 
+    <input type="button" onclick="calc()" value="計算">
+
+    <script>
+        // alert('Hello')
+        var a = "10個<b><i>人</i></b>"
+        var b = 5
+        var c = 8
+        let sum = a+b
+        console.log('sum:',sum)
+        // document.getElementById('head_1').innerHTML = sum
+        var head_1 = document.getElementById('head_1')
+        head_1.innerHTML = sum
+
+        function summary(n1,n2) {
+            head_1.innerText = n1+n2
+            return n1+n2
+        }
+
+        function calc() {
+            let n1 = document.getElementById('n1').value
+            let n2 = document.getElementById('n2').value
+            head_1.innerText = Number(n1)+Number(n2)
+        }
+    </script>
+</body>
+</html>

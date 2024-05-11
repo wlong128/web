@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body class="">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form name="form_google_search" id="form_google_search" method="get" action="https://www.google.com/search" target="_blank">
+                    <div class="row">
+                        <div class="col-md-3 text-end"><label for="q" class="form-label">Google Search：</label></div>
+                        <div class="col-md-7"><input type="text" class="form-control" name="q" id="q" placeholder="請輸入關鍵字"></div>
+                        <div class="col-md-2"><input type="submit" class="btn btn-success" value="送出"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form name="form_2" id="form_2" action="">
+                    <input type="text" class="form-control" name="" id="" placeholder="可以輸入任意文字">
+                    <input type="number" class="form-control" name="" id="" placeholder="請輸入數字">
+                    <input type="date" class="form-control" name="" id="" placeholder="請選擇日期">
+                    <input type="password" name="pw" class="form-control" id="" placeholder="請輸入密碼">
+                    <select name="city" id="city" class="form-select">
+                        <option value="">請選擇</option>
+                        <option value="Taipei">台北市</option>
+                        <option value="New Taipei City" selected>新北市</option>
+                    </select>
+                    <input type="radio" class="form-check-input" name="interest" id="" value="運動"> 運動
+                    <input type="radio" class="form-check-input" name="interest" id="" value="音樂"> 音樂
+                    <input type="radio" class="form-check-input" name="interest" id="" value="睡覺"> 睡覺<br>
+                    <input type="checkbox" class="form-check-input" name="interest2" id="" value="運動"> 運動
+                    <input type="checkbox" class="form-check-input" name="interest2" id="" value="音樂"> 音樂
+                    <input type="checkbox" class="form-check-input" name="interest2" id="" value="睡覺"> 睡覺<br>
+                    <input type="submit" class="btn btn-success" value="送出">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+  </body>
+</html>

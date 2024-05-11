@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="msg"></div>
+
+    <script>
+        var person = {
+            name : 'Dragon',
+            age : 52,
+            job : 'teacher',
+            getData : function(){
+                document.getElementById('msg').innerText = `姓名:${person.name} 年齡:${person.age} 職業:${person.job}`
+            }
+        }
+
+        // ES6 版本語法
+        // document.getElementById('msg').innerText = `姓名:${person.name} 年齡:${person.age} 職業:${person.job}`
+        person.getData()
+    </script>
+</body>
+</html>
