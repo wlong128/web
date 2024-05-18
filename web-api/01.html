@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form id="form1">
+        地　　區：
+        <select name="" id="area">
+            <option value="台北市">台北市</option>
+            <option value="桃園市">桃園市</option>
+        </select><br>
+        預　　算：
+        <input type="number" name="" id="price"><br>
+        日　　期：
+        <input type="datetime-local" name="" id="date"><br>
+        用餐時間：
+        <input type="number" name="" id="time"><br>
+        <input type="button" id="btnSend" value="送出">
+    </form>
+    <script>
+        // 網頁載入完成事件
+        // 舊寫法
+        // $(document).ready(function(){
+        //     console.log('Hello jQuery')
+        // })
+
+        // 新寫法
+        $(function () {
+            $('#btnSend').on('click',function(){
+                // console.log('Hello jQuery')
+                var area = $('#area').val()
+                var price = $('#price').val()
+                var date = $('#date').val()
+                var time = $('#time').val()
+                console.log('url:', `http://127.0.0.1:5000/?area=${area}&price=${price}&date=${date}&time=${time}`)
+                $.getJSON(`api/city.json`, function (data) {
+                    console.log(data)
+                    if (data.status == 200) {
+                        console.log(data.city)
+                    } else {
+                        console.log('Data Errer')
+                    }
+                })
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>

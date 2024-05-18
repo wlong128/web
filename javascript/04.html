@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="msg"></div>
+    <div id="msg2"></div>
+    <div id="msg3"></div>
+    <div id="msg4"></div>
+
+    <form action="">
+        請輸入數字：<br>
+        <input type="number" name="num" id="num">
+        <input type="button" value="加在前面" onclick="toFirst()">
+        <input type="button" value="加在後面" onclick="toLast()">
+        <input type="button" value="移除前面" onclick="outFirst()">
+        <input type="button" value="移除後面" onclick="outLast()">
+    </form>
+
+    <script>
+
+        var msg = document.getElementById('msg')
+
+        // 宣告陣列
+        var students = new Array(3,6,9,1,5,2,7)
+
+        msg.innerText = students.join('、')
+
+        // students.sort()
+        // students.reverse()
+
+        var msg2 = document.getElementById('msg2')
+        msg2.innerText = students.join('、')
+
+
+        // 使用迴圈展示陣列資料
+        for(i=0;i<students.length;i++){
+            msg3.innerHTML += i + ':' + students[i] + '<br>'
+        }
+
+        var msg4 = document.getElementById('msg4')
+
+        function toFirst() {
+            students.unshift(document.getElementById('num').value)
+            msg4.innerText = students.join('、')
+        }
+
+        function toLast() {
+            students.push(document.getElementById('num').value)
+            msg4.innerText = students.join('、')
+        }
+        
+        function outFirst() {
+            students.shift()
+            msg4.innerText = students.join('、')
+        }
+
+        function outLast() {
+            students.pop()
+            msg4.innerText = students.join('、')
+        }
+
+        var a = 10
+        var b = 15
+
+        if(a+10==b+5){
+            console.log('True')
+        }else{
+            console.log('False')
+        }
+
+        
+
+    </script>
+</body>
+</html>

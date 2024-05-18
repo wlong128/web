@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="msg"></div>
+    <div id="msg2"></div>
+    <div id="msg3"></div>
+
+    <script>
+        // var student01 = 'Dragon'
+        // var student02 = 'John'
+        // var student03 = 'Tom'
+        var msg = document.getElementById('msg')
+        // msg.innerText = student01+','+student02+','+student03
+
+        // 宣告陣列
+        var students = new Array('Dragon','John','Tom','Amy','Jon','Candy','Lilian','The One')
+
+        msg.innerText = students.join('、')
+
+        students.sort()
+        students.reverse()
+
+        console.log('students:',students.length)
+
+        console.log('indexOf:',students.indexOf('Amy01'))
+
+        var msg2 = document.getElementById('msg2')
+        msg2.innerText = students.join('、')
+
+
+        // 使用迴圈展示陣列資料
+        for(i=0;i<students.length;i++){
+            msg3.innerHTML += i + ':' + students[i] + '<br>'
+        }
+
+    </script>
+</body>
+</html>
