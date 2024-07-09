@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            /* 儲存格間距歸零 */
+            border-collapse:collapse;
+            background-color: yellow;
+        }
+        td, th {
+            border: 1px solid #00f;
+            margin: 0;
+        }
+        .color {
+            background-color: rgb(107, 9, 25);
+            color: #fff;
+            text-align: end;
+        }
+        th {
+            text-align: center !important;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th width="100">廠牌</th>
+                <th width="100">型號</th>
+                <th width="100" class="color">售價</th>
+                <th width="100">贈品</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Panasonic<br>DMC-LX3</td>
+                <td class="color">16,980</td>
+                <td>4G+原廠皮套</td>
+            </tr>
+            <tr>
+                <td>OLYMPUS</td>
+                <td>μ Tough 8000</td>
+                <td class="color">16,900</td>
+                <td>micro 8G+鋰電池+相機包</td>
+            </tr>
+            <tr>
+                <td>OLYMPUS</td>
+                <td>μ Tough 8000</td>
+                <td class="color">16,900</td>
+                <td rowspan="2">micro 8G+鋰電池+相機包</td>
+            </tr>
+            <tr>
+                <td>OLYMPUS</td>
+                <td>μ Tough 8000</td>
+                <td class="color">16,900</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
