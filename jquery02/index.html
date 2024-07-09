@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#c1').hide()
+            $('#img01').on('mouseover', function(){
+                $('#c1').slideToggle(1000).animate({left:'0px'})
+            })
+            $('#img01').on('mouseout', function(){
+                $('#c1').animate({left:'170px'}).slideToggle(1000)
+            })
+            function go() {
+                $('#c1').css('left','0px')
+            }
+        })
+    </script>
+    <style>
+        body {
+            background-color: black;
+            margin: 0px;
+        }
+        
+        #player {
+            width: 760px;
+        }
+        
+        .float {
+            float: left;
+        }
+
+        #c1 {
+            position: absolute;
+            left: 170px;
+            top: 180px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="player">
+        <div class="float" style="height:122px"><img src="images/1_01.jpg" alt=""></div>
+        <div class="float" style="height:122px"><img src="images/1_02.jpg" alt=""></div>
+        <div class="float" style="width: 144px">
+            <div style="height:235px">
+                <img src="images/1_03.jpg" alt="">
+            </div>
+            <div style="height:154px">
+                <img src="images/1_07.jpg" alt="">
+            </div>
+        </div>
+        <div class="float" style="height:337px"><img src="images/1_04.jpg" alt=""></div>
+        <div class="float" style="height:337px"><img id="img01" src="images/1_05.jpg" alt=""></div>
+        <div class="float" style="height:337px"><img src="images/1_06.jpg" alt=""></div>
+        <div class="float" style="height:52px"><img src="images/1_08.jpg" alt=""></div>
+        <div id="c1"><img src="images/1-1.gif" alt=""></div>
+    </div>
+</body>
+
+</html>
