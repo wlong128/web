@@ -1,0 +1,23 @@
+#zen-summary {
+    background-image: linear-gradient(to top,#fff,rgb(90, 90, 245));
+    background-color: rgb(224, 217, 114);
+}
+a[href="/examples/style.css"] {
+    color: red;
+}
+#zen-preamble {
+    background-image: url(http://w9.loxa.edu.tw/a923528/pictures/bouz/q33.gif);
+    /* 設定重覆顯示方式 */
+    background-repeat: no-repeat;
+    /* 設定位置 x y */
+    background-position: center center;
+    /* 設定背景圖片大小 */
+    background-size: 100%;
+}
+body {
+    background-image: url(http://w9.loxa.edu.tw/a923528/pictures/bouz/q101.gif);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    /* 定位顯示方式 */
+    background-attachment: fixed;
+}
