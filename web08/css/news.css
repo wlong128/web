@@ -1,0 +1,16 @@
+.main {
+    width: 385px;
+    margin: auto;
+}
+.header {
+    background-image: url(../images/t1.jpg);
+    height: 116px;
+}
+.footer {
+    background-image: url(../images/t3.jpg);
+    height: 67px;
+}
+.body {
+    background-image: url(../images/t2.jpg);
+    padding: 0 40px;
+}
