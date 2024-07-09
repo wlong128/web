@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+  <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+  <!-- https://cdnjs.com/libraries/font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/w3.js"></script>
+
+  <title>烏龍多媒體 - Home</title>
+  <style>
+    .card img {
+      height: 210px;
+    }
+
+    .multiline-ellipsis {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body class="">
+
+  <!-- navbar -->
+  <div w3-include-html="navbar.html"></div>
+
+  <div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/photo1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>超值行程－奧地利熊布朗宮</h5>
+            <p>特別企劃，入內參觀一探哈布斯堡王朝的繁盛興衰！</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/photo2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>超值行程－北海道雪的美術館</h5>
+            <p>特別企劃，獨家雪的美術館體驗浪漫藝術氣息！</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/photo3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>超值行程－奧地利熊布朗宮</h5>
+            <p>特別企劃，入內參觀一探哈布斯堡王朝的繁盛興衰！</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>年終特惠！</strong> 雙十連假出國馬上報名一人現折3000元！
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  </div>
+
+  <section id="news">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/img1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">戀戀北海道</h5>
+              <p class="card-text multiline-ellipsis">
+                星野度假村連泊二晚，駐足在著名建築大師安藤忠雄設計的「水之教堂」，深深淺淺的綠倒映出油畫般美麗色彩，莊嚴的十字架散發出聖潔氛圍，夢幻美景令人流連忘返。</p>
+              <a href="#" class="btn">詳細資料>></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/img2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">文藝維也納</h5>
+              <p class="card-text multiline-ellipsis">
+                貝爾維第宮又名「美景宮」，位於奧地利維也納的一個巴洛克建築風格的宮殿。貝爾維第宮原是哈布斯堡王朝將軍歐根親王的宮殿，目前則是奧地利美景宮美術館。</p>
+              <a href="#" class="btn">詳細資料>></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/img3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title multiline-ellipsis">純淨瑞士</h5>
+              <p class="card-text multiline-ellipsis">搭乘齒軌火車到標高3089公尺的高奈葛拉特觀景台，眺望阿爾卑斯山中最著名的馬特洪峰，觀賞冰川天堂，壯觀景緻令人驚嘆不已。</p>
+              <a href="#" class="btn">詳細資料>></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/img4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">花現富良野</h5>
+              <p class="card-text multiline-ellipsis">
+                富良野四季彩之丘占地7公頃，遍植薰衣草、金魚草、百日草、向日葵、晚開薰衣草、鼠尾草、波斯菊、醉蝶花、金盞花等觀賞鮮花，滿滿花田令人心曠神怡。</p>
+              <a href="#" class="btn">詳細資料>></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/img5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">遇見九州</h5>
+              <p class="card-text multiline-ellipsis">豪斯登堡位於日本九州，一處重現中古世紀歐洲街景的渡假勝地，命名由來是荷蘭女王陛下所居住的宮殿豪斯登堡宮殿，園內風景怡人俯拾皆畫。
+              </p>
+              <a href="#" class="btn">詳細資料>></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/img6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">暢遊東京</h5>
+              <p class="card-text multiline-ellipsis">
+                東京迪士尼樂園是老少皆宜的歡樂天堂，與白雪公主、米老鼠、唐老鴨、小熊維尼一同遨遊童話世界、明日世界、小小世界、海盜船、灰姑娘城堡、非洲叢林探險等設施。</p>
+              <a href="#" class="btn">詳細資料>></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <div w3-include-html="footer.html"></div>
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+  <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+  <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+
+  <script>
+    w3.includeHTML();
+    $(function () {
+      $('#index').addClass('active')
+    })
+  </script>
+</body>
+
+</html>
